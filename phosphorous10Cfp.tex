@@ -1,0 +1,194 @@
+% NOTE TO TYPESETTERS: Two somewhat obscure yet prideful points to
+% keep in mind about this document.  (1) Words should not be
+% hyphenated.  In no case should hyphens be allowed into the document,
+% or you'll ruin the joke.  (2) The footnotes must remain
+% typographically intrusive and ugly, as it reinforces the badness of
+% named parenthetical things.  Please do not relegate them to a
+% separate page.
+
+% Can I just say that I fucking love eplain?
+\input eplain
+
+% magnifying small fonts gives titles an ironic old-school flair
+\font\titlefont=cmr5 at 10pt
+
+% plain TeX's \beginsection is too eager to make column breaks
+\def\section#1\par{\bigskip\noindent{\bf #1}\nobreak\par\noindent}
+
+% I fucking love eplain.
+\let\footnote = \numberedfootnote
+
+\topmargin = 1in
+\bottommargin = 1in
+\leftmargin = 1.9in
+\rightmargin = 1.9in
+\paperheight = 11truein
+\paperwidth = 8.5truein
+
+% Part of the humor in this paper are the freshman and awful abuses of
+% TeX.  The following effects the main joke, by castrating TeX's
+% incredibly sophistcated hyphenation and line breaking algorithms.
+\tolerance=10000
+\hbadness=10000
+\hyphenchar\font=-1
+{\tt \hyphenchar\font=-1}
+{\it \hyphenchar\font=-1}
+{\titlefont \hyphenchar\font=-1} % can't be too careful
+
+\def\bull#1{\medskip\hbox{\vtop{\hsize12pt{$\bullet$\hfil}}
+\vtop{\hsize4.5in{#1}}\hfil}}
+
+\centerline{\titlefont phosphoConf 2010 callForPapers}
+\smallskip
+\centerline{{\it The Next Fifty Weeks}}
+
+%\begin{verbatim}
+%phs> |10 qlS 
+%         |20 qt Popular 2|
+%         |30 qt Better\\! 3|1|
+%tr
+%\end{verbatim}
+
+\section twitterateProgramming
+
+As the programming language Fortress has taught us, programming
+languages will be more popular if they present code in a way
+programmers like to look at (scientists all love to look at
+\TeX\ output, for example).  After extensive human factors studies,
+PhosphoDevs determined that 140 character ``tweets'' were the most
+modern and popular presentation mechanism for textual information.
+Indeed, the restriction to 140 characters makes users compress their
+messages into semiProgrammatic shortHand representations anyway.
+Possible paper topics include:
+
+\unorderedlist
+\li Advantages of using Tinyurl over Github.
+\li The tweetEvalTweetLoop: a great thing, or the
+{\bf best} {\bf thing} {\bf ever}?
+\li Efficient algorithms for Tweave and Twangle.
+\endunorderedlist
+
+\section kindedPhosphorus
+
+Functional programming languages such as Haskell and OCaml claim to
+have eliminated large classes of programmer errors by imposing strict
+type systems.  Exciting forays into this area have been made with the
+release of kindedPhosphorus, an extension of the base Phosphorus with
+{\it kinds}, which are far more complicated, restrictive, and
+bugEliminating than mere types.  We expect many exciting papers that
+use Greek letters, exotic typography, and other impressiveLooking
+features of \TeX\ to result from this work, such as the following.
+
+\unorderedlist
+\li Does limiting the number of useful programs programmers can write
+really count as ``fewer bugs''?
+%\li Backward compatibility with the (now deprecated)
+%unicornTyping\footnote{Human factors studies showed users liked
+%  unicorns more than ducks.} system.
+\li What should we use {\tt Fraktur} for?
+\endunorderedlist
+
+\section boltOriented Programming
+
+Long strides have been made in the past fifty weeks in the field of
+boltOriented programming, a programming discipline which Phosphorus
+excels at.  Paper topics include:
+
+\unorderedlist
+\li The boltOriented community and the kindedPhosphorus communities hate
+  each other.  How can these two subsystems be made more incompatible?
+\li Novel ideas about the metaBolt protocol and other threadStripping
+  techniques.  Efficient strategies for compiling cageNuts.
+\li Critiques of the ``gang of several'' erectorSet theory and the
+``quality that can not be screwed.''
+\endunorderedlist
+
+\section visualPhosphorusForAccountants And Deprecating phosphArc 
+
+Elimination of needless parenthesis from multiIf (similar to Lisp
+COND) has met a cold reception by the Phosphorus community.  Arc is
+simply not a popular language.
+
+On the other hand, one of the implementers of the VBA language, Joel
+Spolsky, is hugely popular.  phosphoDevs are often heard repeating the
+clever epithet ``bend it like Spolsky'', which refers to his 2006
+essay ``Language Wars''\footnote{{\tt
+http://www.joelonsoftware.com/items/2006/09/01.html}} in which he
+simultaneously proclaims that languages must have a ``gigantic
+ecosystem'' to be viable for ``web development'', and that his
+company's flagship software offering is written in Wasabi, a language
+they invented for themselves for ``web development'' that resembles
+Visual Basic, but has metaprogramming and code generation
+features.\footnote{{\tt
+http://www.fogcreek.com/FogBugz/blog/category/Wasabi.aspx}.  N.B. The
+``gigantic ecosystem'' for Wasabi is never described.}  After thus
+debating the language issue, he proclaims that ``debating the merits
+of programming languages [is] a fruitless debate if I've ever seen
+one.''  This ability to take both sides of an issue and make it appear
+both coherent and pointless at the same time is something we view as
+critical for our ``popular is better'' approach.
+
+\unorderedlist
+\li How can we make Phosphorus less like Arc and more like VBA?  
+\li It has been proposed that Popularization techniques should pass 
+a ``Spolsky test'' to determine if they work or not.  What are some
+  good Spolsky tests?  For example; does a given PopTech work to
+  popularize the idea that a Lisp-3 is {\it one better} than a Lisp-2?
+\li How can we distance ourselves from PG without losing the attention
+  of small startUp companies that want to emulate Viaweb's success?
+\endunorderedlist
+
+%% \section Vampires
+
+%% Vampires are hugely popular.  
+
+%% \unorderedlist
+%% \li How can we work them into Phosphorus?
+%% \endunorderedlist
+
+\section starPhorus
+
+We are basically obliged to accept any paper on how to make a
+programming language better for parallel programming, mostly because
+the best ideas so far are actors and STM, which are both incredibly
+lame.  
+
+\unorderedlist
+\li The most popular solutions to the parallel programming problem are
+language features boltedOn, such as the CUDA SDK.  Are Phosphorus'
+boltOriented language features a good fit for such solutions?
+\li I want to put a joke about the Python GIL here, but I can't.  {\it
+  It's just too painful.}
+\endunorderedlist
+
+\section syntacticExtension License Examination Questions
+
+As always, syntactic extension of the Phosphorus language may only be
+performed by licensed and bonded experts.  Licensing examinations will
+be provided at the conference, and new MacroWritingRightsManagement
+keys will be distributed.  We solicit short papers suggesting new
+questions for the exams.
+
+\section thunderTalks
+
+A hugely popular segment of our informal phosphoMeetUps has been
+``thunderTalks'', a five minute talk in which you yell and rant about
+your pet programming language issues and pound your fist on a lectern.
+Cheap beer will be available.  First come first serve.
+\bigskip
+{\center
+{\titlefont Submissions Due By Jan 12 2010}\footnote{Unless your adviser was in our fraternity.}
+
+{\tt pc09-submissions@nectarine-city.com}
+}
+\bigskip
+% damnit, which font is this anyway? sectionfont or something?
+\section {\hyphenchar\font=-1 WAXY WHITE LEVEL SPONSORS}
+
+\unorderedlist
+\li Nectarine City, LLC {\tt http://nectarine-city.com}
+%\li Steel Bank Studio {\tt http://sb-studio.net}
+%\li Gigamonkeys Consulting {\tt http://gigamonkeys.com}
+\endunorderedlist
+
+\bye

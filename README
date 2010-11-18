@@ -1,0 +1,14 @@
+This is the source to the infamous Phosphorous papers!  Just say
+`make`.
+
+If you want to extend the joke, you must obey the following rules:
+
+1) Do not settle on one of "Phosphorous" or "Phosphorus", but use both
+   in silent error.
+
+2) Never typeset a hyphen.  See the TeX source for commands to defeat
+   hyphenation.
+
+3) Over and above the lack of hyphenation, typography should appear
+   wonky, as if some set of rules was being followed to the letter,
+   yet the results are ugly.  Footnotes are good for this.
