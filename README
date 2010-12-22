@@ -1,5 +1,9 @@
-This is the source to the infamous Phosphorous papers!  Just say
-`make`.
+This is the source to the infamous Phosphorous papers!  These papers
+describe a joke language "Phosphorus" in such a way that gently
+lampoons the way Lispers tend to grouse about why Lisp is not more
+widely used.  There are many inside jokes.
+
+Just say `make`.
 
 If you want to extend the joke, you must obey the following rules:
 
