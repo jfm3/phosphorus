@@ -1,0 +1,181 @@
+% NOTE TO TYPESETTERS: Two somewhat obscure yet prideful points to
+% keep in mind about this document.  (1) Words should not be
+% hyphenated.  In no case should hyphens be allowed into the document,
+% or you'll ruin the joke.  (2) The footnotes must remain
+% typographically intrusive and ugly, as it reinforces the badness of
+% named parenthetical things.  Please do not relegate them to a
+% separate page.
+
+% Can I just say that I fucking love eplain?
+\input eplain
+
+% magnifying small fonts gives titles an ironic oldSchool flair
+\font\titlefont=cmr5 at 10pt
+
+% plain TeX's \beginsection is too eager to make column breaks
+\def\section#1\par{\bigskip\noindent{\bf #1}\nobreak\par\noindent}
+
+% I fucking love eplain.
+\let\footnote = \numberedfootnote
+
+\topmargin = 1in
+\bottommargin = 1in
+\leftmargin = 1.9in
+\rightmargin = 1.9in
+\paperheight = 11truein
+\paperwidth = 8.5truein
+
+\clubpenalty=300
+\widowpenalty=300
+
+% Part of the humor in this paper are the freshman and awful abuses of
+% TeX.  The following effects the main joke, by castrating TeX's
+% incredibly sophistcated hyphenation and line breaking algorithms.
+\tolerance=10000
+\hbadness=10000
+\hyphenchar\font=-1
+{\tt \hyphenchar\font=-1}
+{\it \hyphenchar\font=-1}
+{\titlefont \hyphenchar\font=-1} % can't be too careful
+
+\def\bull#1{\medskip\hbox{\vtop{\hsize12pt{$\bullet$\hfil}}
+\vtop{\hsize4.5in{#1}}\hfil}}
+
+\centerline{\titlefont phosphoCon 2011 callForPapers}
+\smallskip
+\centerline{{\it Vae victis!}}
+\medskip
+
+PhosphoCon continues to be the world's best resource for learning and
+sharing about the Phosphorous programming language.  PhosphoCon 2011
+shall continue in the tradition of singleTrack ``bigRoom'' style
+presentations, punctuated by informal breakout sessions where it is
+{\it totally cool} to hand out your moo cards to every obscenely
+wealthy 20Something you can find.
+
+PhosphoCon welcomes research articles from scientists, Engineers,
+researchScholars, and practitioners of the Art of computerProgramming,
+across any academic field or application domain, and from all over the
+world.  Papers for publication in PhosphoCon proceedings are selected
+through vigorous peer review that in no way is influenced by the
+things people were complaining about last year.  Be advised that
+papers containing the hyphen character or the LWord will be discarded
+immediately, and that we prefer papers relating to the following
+conference topics.  {\it Ignotium per ignotius!}
+
+\section noL
+
+The addition of the noL module to Phosphoros brings Phosphorous
+programmers into the main stream of the noL movement.  This is great
+because as even Guy Steele will tell you, programming languages are
+not web scale\footnote{{\tt http://tinyurl.com/33ttffw}}.  {\it
+  Ientaculum per rex!} Possible paper topics include:
+
+\unorderedlist
+\li How to get noL into your shop when your boss says no.
+\li Why all that old L crap sucks, and how noL rules.
+\li No, seriously dude, it rules.
+\endunorderedlist
+
+\section Latin is officiallySexy
+
+By use of an Internet Poll, programmers of Phosphoros have decided
+that the Latin language shall be part of our branding and
+popularization structure.  Latin is obscure enough so that errors are
+not obvious to the casual reader, yet arcane enough to invoke an
+unparalleled sense of cleverness about the author.  Phosphoros
+therefore aims to be the Latin of programming languages, and as such
+we shall use Latin phrases liberally throughout our writing, to remind
+the reader of this marketing lever. {\it Quidquid latine dictum sit
+  altum videtur!}  Possible paper topics include:
+
+\unorderedlist
+\li Essential properties of the category of Resurrected languages.
+\li We're running out of Latin phrases already, actually.
+\endunorderedlist
+
+\section bizDevs, Seth Godin, and Popularity
+
+It is a commonly accepted fact that Java(TM) became popular not
+because it is intrinsically good, but because Sun spent millions of
+dollars on {\it marketing} to convince companies to force their C++
+developers to use it.  The best marketing expert of our age is Seth
+Godin, mostly because he has a blog and uses only words we understand.
+{\it Quis custodiet ipsos custodes!}  Possible paper topics include:
+
+\unorderedlist
+\li {\it All Marketers are Liars.}  Are all PhosphoDevs liars?  Should
+we call them ``stories'' instead of programs?  WWSGD?
+\li Is our meatball sundae a free prize that wins us permission from
+our tribe?
+\endunorderedlist
+
+\bigskip
+\bigskip
+
+\section phosphorusMT
+
+Machine translation (MT) is a technique used by computational
+linguists to translate from one natural language to another.  High
+degrees of success have been obtained in MT by ignoring deep
+structural analysis of language and instead performing statistical
+analyses of word frequency and position correlation between the source
+and target languages.  The Phosphorous community believes that similar
+techniques can be used to compile programs, such that even incorrect
+programs will be ``translated'' into the desired object code.  {\it
+  Hesperus Phosphorus est!}  Possible paper topics include:
+
+\unorderedlist
+\li Will MT of programs lead to a new definition of Kolmogorov
+complexity?  (Here is your chance to use displayed math and other
+special typography in \TeX.)
+\li Can one write probabilistic algorithms by introducing explicit bugs in
+nonProbabilistic algorithms and compiling {\tt +mt}?
+\endunorderedlist
+
+\section idiomaticPhosphorus
+
+Modern programming languages have grown in complexity to the point
+where instead of just knowing a base language and gaining familiarity
+with a set of libraries, one also must learn a set of {\it idioms} for
+that language.  Lack of idiomatic knowledge means a programmer will
+miss out on certain features, produce suboptimal code, and intoduce
+maintenance problems.  This has led to the exciting new field of idiom
+design.  {\it Mutatis mutandis!}  Possible paper topics include:
+
+\unorderedlist
+\li Language design is ... idiom design?
+\li Is it better for the need for an idiom to be a complex concept, or
+a workaround to shoehorn a useful notion into the rigid formalisms of
+a language?  Will Haskell win the idiom war?  Will Python?
+\endunorderedlist
+
+\section syntacticExtension License Examination Questions
+
+As always, syntactic extension of the Phosphorus language may only be
+performed by licensed and bonded experts.  Licensing examinations will
+be provided at the conference, and new MacroWritingRightsManagement
+keys will be distributed.  We solicit short papers suggesting new
+questions for the exams.  {\it Solvitur ambulando!}
+
+\section thunderTalks
+
+A hugely popular segment of our informal phosphoMeetUps has been
+``thunderTalks'', a five minute talk in which you yell and rant about
+your pet programming language issues and pound your fist on a lectern.
+Cheap beer will be available.  {\it Potior est, qui prior est!}
+\bigskip
+{\center
+{\titlefont Submissions Due By Feb 28 2011}\footnote{Unless your adviser was in our fraternity.}
+
+{\tt pc11Submissions@nectarine-city.com}
+}
+\bigskip
+% damnit, which font is this anyway? sectionfont or something?
+%\section {\hyphenchar\font=-1 WAXY WHITE LEVEL SPONSORS}
+
+%\unorderedlist
+%\li Nectarine City, LLC ({\tt http://nectarine-city.com})
+%\endunorderedlist
+
+\bye
